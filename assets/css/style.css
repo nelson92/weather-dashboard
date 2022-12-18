@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+}
+
+.border {
+    border: 1.5px solid black;
+}
+
+.spacebetween{
+    justify-content: space-around;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgb(112, 179, 201);
+    
+}
+
+.heading {
+    color:white;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 2rem auto;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+#city {
+    font-size: 2rem;
+    width: 100%;
+    border-radius: .4rem;
+    border: .1rem solid black;
+    height: 4.5rem;
+    padding-bottom: .5rem;
+    padding-top: 0px;
+    padding-left: .5rem;
+}
+
+#search-btn {
+    margin-bottom: 1rem;
+    background-color: #96a1b9;
+    color: white;
+}
+
+.btn {
+    font-size: 2rem;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    padding: .8rem 0;
+}
+
+#current-weather {
+    height: 50%;
+    border: .3rem solid black;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 3.5rem;
+    font-weight: bold;
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+#current-icon {
+    filter: drop-shadow(0 0 1rem rgb(208, 203, 203));
+}
+
+
+
+span {
+    padding: 0 1.5rem;
+    color: white;
+}
+
+/* style the h3 header */
+h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.card-body {
+    background-color:#0b4764;
+    height: 20rem;
+    padding-left: 4%;
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+#five-day-header {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
