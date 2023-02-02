@@ -141,3 +141,7 @@ p {
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
+#future-weather-card {
+    background-color: #0b4764;
+}
