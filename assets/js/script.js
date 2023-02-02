@@ -1,6 +1,5 @@
-var apiKey = "";
-var citySerchList = [];
-
+var apiKey = "bb14c36c10f7318f3cc5c8264cc57b9b";
+// var citySerchList = [];
 
 let searchHistory = [];
 
@@ -33,6 +32,7 @@ async function searchButtonClick() {
 
     // save data to local storage
     searchHistory[cityName] = weatherData;
+    storeSearchHistory(searchHistory);
     // display new city in search history
 
     displayWeather({ city: cityName, data: weatherData });
@@ -43,5 +43,7 @@ Object.keys(searchHistory).forEach((cityName) => {
     const searchData = searchHistory[cityName];
     // add code for button for this city
     $(historyButton).click(searchHistoryButtonClick);
-}
+});
+
+// activate click event handler from button
 $('search-btn').click(searchHistoryButton)
