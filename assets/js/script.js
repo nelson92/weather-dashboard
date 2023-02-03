@@ -113,6 +113,14 @@ function addToList(c) {
     $(".list-group").append(listEl);
 }
 
+function invokePastSearch(event) {
+    var liEl = event.target;
+    if (event.target.matches("li")) {
+        city = liEl.textContent.trim();
+        currentWeather(city);
+    }
+}
+
 function loadlastCity() {
     $("ul").empty();
     var sCity = JSON.parse(localStorage.getItem("cityname"));
