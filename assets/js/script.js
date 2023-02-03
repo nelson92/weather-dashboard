@@ -1,6 +1,12 @@
 var apiKey = "bb14c36c10f7318f3cc5c8264cc57b9b";
 // var citySerchList = [];
-
+var city = "";
+var searchCity = $("#city-user-input");
+var searchButton = $("#search-btn");
+var currentCity = $("#current-city");
+var currentTemp = $("#temperature");
+var currentHumidity = $("#humidity");
+var currentWind = $("#wind-speed");
 
 let searchHistory = [];
 
@@ -32,7 +38,7 @@ function displayWeather(event) {
     // add code to include weather data on the page
     event.preventDefault();
     if (searchCity.val().trim() !== "") {
-        city = serchCity.val().trim();
+        city = searchCity.val().trim();
         currentWeather(city);
     }
 }
@@ -57,7 +63,7 @@ function searchButtonClick(city) {
 
         $(currentWind).html("" + windMph + "" + "MPH");
         
-
+        $(currentHumidity).html(" " + response.main.humidity +" " +  "%");
         var temp = (response.main.temp - 273) * 180 + 32;
         $(currentTemp).html("" + (temp).toFixed(2) + "" + "&#8457");
 
