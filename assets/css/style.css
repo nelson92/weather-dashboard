@@ -1,4 +1,6 @@
-
+.bgcolor {
+    background-color: #5b94f6
+}
 
 .border {
     border: 1px solid black;
@@ -41,4 +43,12 @@ header {
 .list-group {
     cursor: pointer;
     color: black;
+    /* padding-top: 2px; */
+}
+
+.buttontext {
+    color: white;
+    background-color: #3b78e1;
+    border: black;
+    padding-bottom: 3px;
 }
