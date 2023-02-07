@@ -6,7 +6,7 @@
     border: 3px solid black;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     body {
         display: grid;
     }
@@ -16,7 +16,7 @@
     }
 
     .row {
-        display: block;
+        display: flex;
     }
 
     .col-6 {
