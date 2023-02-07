@@ -15,7 +15,7 @@ This application is a weather dashboard that uses a third party weather API and 
 * [Questions](#questions)
 
 # Usage:
-View the live application on GitHub Pages https:
+View the live application on GitHub Pages: https://nelson92.github.io/weather-dashboard/
 
 ## Contributing
 No guidelines for this project
